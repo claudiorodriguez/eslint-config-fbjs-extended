@@ -1,0 +1,49 @@
+{
+  "name": "eslint-config-fbjs-extended",
+  "version": "1.0.0",
+  "description": "fbjs/opensource eslint config, extended with some useful plugins",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jsonlint rules.json",
+    "precommit": "npm run lint",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "echo 'NO TEST SCRIPT' && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiorodriguez/eslint-config-fbjs-extended.git"
+  },
+  "keywords": [
+    "eslint",
+    "fbjs",
+    "import",
+    "unicorn"
+  ],
+  "author": "Claudio Rodriguez <cjrodr@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claudiorodriguez/eslint-config-fbjs-extended/issues"
+  },
+  "homepage": "https://github.com/claudiorodriguez/eslint-config-fbjs-extended#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "husky": "^0.13.3",
+    "jsonlint": "^1.6.2",
+    "semantic-release": "^6.3.6"
+  },
+  "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint-config-fbjs": "^2.0.0-alpha.1",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-flowtype": "^2.32.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jasmine": "^2.2.0",
+    "eslint-plugin-prefer-object-spread": "^1.2.1",
+    "eslint-plugin-react": "^6.7.1",
+    "eslint-plugin-unicorn": "^2.1.1"
+  },
+  "peerDependencies": {
+    "eslint": "^3.19.0"
+  }
+}

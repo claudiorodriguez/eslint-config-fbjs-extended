@@ -1,0 +1,96 @@
+{
+  "extends": "fbjs/opensource",
+  "rules": {
+    "filenames/match-exported": 2,
+    "filenames/match-regex": [
+      2,
+      "^[A-Z]?[a-z]+(?:[A-Z][a-z]+)*(\\.[a-z]+)*$",
+      false
+    ],
+    "filenames/no-index": 0,
+    "import/default": 2,
+    "import/export": 2,
+    "import/extensions": [
+      2,
+      "never",
+      {
+        "json": "always"
+      }
+    ],
+    "import/first": [
+      2,
+      {
+        "absolute-first": true
+      }
+    ],
+    "import/max-dependencies": [
+      1,
+      {
+        "max": 10
+      }
+    ],
+    "import/named": 2,
+    "import/namespace": 2,
+    "import/newline-after-import": 2,
+    "import/no-absolute-path": 2,
+    "import/no-amd": 2,
+    "import/no-commonjs": 2,
+    "import/no-deprecated": 1,
+    "import/no-duplicates": 0,
+    "import/no-dynamic-require": 2,
+    "import/no-extraneous-dependencies": [
+      2,
+      {
+        "devDependencies": true,
+        "optionalDependencies": true,
+        "peerDependencies": true
+      }
+    ],
+    "import/no-internal-modules": 0,
+    "import/no-mutable-exports": 2,
+    "import/no-named-as-default": 2,
+    "import/no-named-as-default-member": 2,
+    "import/no-named-default": 2,
+    "import/no-namespace": 2,
+    "import/no-nodejs-modules": 0,
+    "import/no-restricted-paths": 0,
+    "import/no-unassigned-import": 2,
+    "import/no-unresolved": 2,
+    "import/no-webpack-loader-syntax": 2,
+    "import/order": [
+      2,
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "never"
+      }
+    ],
+    "import/prefer-default-export": 1,
+    "import/unambiguous": 1,
+    "unicorn/catch-error-name": [
+      "error",
+      {
+        "name": "error"
+      }
+    ],
+    "unicorn/custom-error-definition": 0,
+    "unicorn/escape-case": 2,
+    "unicorn/explicit-length-check": 0,
+    "unicorn/filename-case": 0,
+    "unicorn/no-abusive-eslint-disable": 2,
+    "unicorn/no-array-instanceof": 2,
+    "unicorn/no-hex-escape": 2,
+    "unicorn/no-new-buffer": 2,
+    "unicorn/no-process-exit": 0,
+    "unicorn/number-literal-case": 2,
+    "unicorn/prefer-starts-ends-with": 2,
+    "unicorn/prefer-type-error": 2,
+    "unicorn/throw-new-error": 2
+  }
+}
