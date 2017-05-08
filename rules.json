@@ -1,5 +1,10 @@
 {
   "extends": "fbjs/opensource",
+  "plugins": [
+    "filenames",
+    "import",
+    "unicorn"
+  ],
   "rules": {
     "filenames/match-exported": 2,
     "filenames/match-regex": [
